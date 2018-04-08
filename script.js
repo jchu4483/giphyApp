@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   function parseSearchSendRequest() {
     var giphySearch = document.getElementById('giphySearch').value
-    var giphyKey = "DF7ZhMxrYCRQdPqmESdgwwwZLuXiLJTu"
+    var giphyKey = ""
     var giphyxhr = "http://api.giphy.com/v1/gifs/search?q=" + giphySearch + "&api_key=" + giphyKey + "&limit=1";
 
     var newRequest = new XMLHttpRequest();

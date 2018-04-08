@@ -1,0 +1,18 @@
+.giphyContainer, .searchSection {
+    margin-top: 40px;
+    display: block;
+}
+
+.searchSection {
+    margin: 0 auto;
+    width: 400px;
+}
+
+.giphyContainer {
+    max-width: 100%;
+}
+
+img {
+    display: inline-block;
+    margin-left: 25px;
+}

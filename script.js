@@ -36,12 +36,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
   }
 
-  searchButton.addEventListener('click', parseSearchSendRequest)
-  removeButton.addEventListener('click', removeAllGiphys)
-  giphySearchBar.addEventListener('keyup', function(event) {
+  function detectKeyCode(event) {
     event.preventDefault();
     if (event.keyCode === 13) {
       parseSearchSendRequest()
     }
-  })
+  }
+
+  searchButton.addEventListener('click', parseSearchSendRequest)
+  removeButton.addEventListener('click', removeAllGiphys)
+  giphySearchBar.addEventListener('keyup', detectKeyCode)
 })
